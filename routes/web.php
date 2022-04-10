@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\donationsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('donations.index');
 });
+
+Route::get('/donate', function () {
+    return view('donations.donate');
+});
+
+Route::get('/show', function () {
+    return view('donations.show');
+});
+
