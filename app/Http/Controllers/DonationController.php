@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\donation;
+use CreateDonationsTable;
 use Illuminate\Http\Request;
 
 class DonationController extends Controller
@@ -24,7 +26,7 @@ class DonationController extends Controller
      */
     public function create()
     {
-        //
+        return view('donations/donate');
     }
 
     /**
@@ -42,6 +44,8 @@ class DonationController extends Controller
             'cause'=>'required',
             'montant'=>'required'
         ]);
+        donation::create($request->all()); 
+        return redirect()->route('products.index') -> with('success','Product created successfully.');
     }
 
     /**

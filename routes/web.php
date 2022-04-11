@@ -18,15 +18,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('donations.index');
 });
+
+Route::resource('acceuil',DonationController::class);
+// for testing 
 Route::get('/test', function () {
     return view('test');
 });
-Route::get('/donate', function () {
-    return view('donations.donate');
-});
 
-Route::get('/show', function () {
-    return view('donations.show');
-});
-// Route::resource('/',DonationController::class);
+// Route::get('/donate', function () {
+//     return view('donations.donate');
+// });
 
+// Route::get('/show', function () {
+//     return view('donations.show');
+// });

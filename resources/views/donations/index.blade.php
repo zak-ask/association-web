@@ -17,7 +17,7 @@
           <div class="carousel-caption text-start">
             <h1>Example headline.</h1>
             <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="/donate">Donate today</a></p>
+            <p><a class="btn btn-lg btn-primary" href="{{route('acceuil.create')}}">Donate today</a></p>
           </div>
         </div>
       </div>
