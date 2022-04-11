@@ -50,6 +50,13 @@
 
   </form> -->
 <!-- </div> -->
+<div>
+  @if($errors->any())
+    @foreach($errors->any() as $error)
+      {{$error}}
+    @endforeach
+  @endif
+</div>
 <div class="container">
   <div class="panel panel-primary">
     <div class="panel-heading">Donation</div>

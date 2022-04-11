@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\donationsController;
+use App\Http\Controllers\DonationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('donations.index');
 });
-
+Route::get('/test', function () {
+    return view('test');
+});
 Route::get('/donate', function () {
     return view('donations.donate');
 });
@@ -26,4 +28,5 @@ Route::get('/donate', function () {
 Route::get('/show', function () {
     return view('donations.show');
 });
+// Route::resource('/',DonationController::class);
 
