@@ -12,6 +12,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/notre_style.css') }}" rel="stylesheet">
 
 </head>
 
@@ -63,18 +64,6 @@
                     </div>
                     <div class="col-md-8">
                         <div class="row">
-                            <div class="col-md-4 col-sm-5">
-                                <div class="footer-text one">
-                                    <h3>RECENT POST</h3>
-                                    <ul>
-                                        <li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing Elit</a></li>
-                                        <li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing </a></li>
-                                        <li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing Elit</a></li>
-                                        <li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing</a></li>
-                                        <li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing Elit</a></li>
-                                    </ul>
-                                </div>
-                            </div>
                             <div class="col-md-4 col-sm-3">
                                 <div class="footer-text two">
                                     <h3>LIENS RAPIDES</h3>
@@ -99,10 +88,10 @@
                     </div>
                 </div>
             </div>
-            <div class="footer_bottom">
-                <p>Copyright @ 2022 | Touts droits résérvés </p>
-            </div>
         </footer>
+        <div class="footer_bottom">
+                <p>Copyright @ 2022 | Touts droits résérvés </p>
+         </div>
     </div>
 
 </body>

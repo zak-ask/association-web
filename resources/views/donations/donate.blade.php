@@ -60,7 +60,7 @@
   </ul>
 </div> 
 @endif -->
-<div class="container">
+<div class="container" id="formulaire-container">
   <div class="panel panel-primary">
     <div class="panel-heading">Donation</div>
     <div class="panel-body">
@@ -83,9 +83,12 @@
           <select class="form-control" id="exampleFormControlSelect1">
             <option>La guerre ukrainienne</option>
             <option>La faim au Yémen</option>
-            <option>Catastrophes naturelles en asie</option>
+            <option>Catastrophes naturelles aux philippines</option>
           </select>
         </div>
+
+        
+        <label for="montant">Montant:</label>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="montant" id="montant" value="option1" checked>
           <label class="form-check-label" for="montant">100 DH</label>
@@ -102,7 +105,11 @@
           <input class="form-check-input" type="radio" name="montant" id="montant" value="option1" checked>
           <label class="form-check-label" for="montant">10,000 DH</label>
         </div>
-        <div>
+
+        
+        
+
+        <div id="bouton-envoyer">
           <input type="submit" class="btn btn-primary" value="Donate">
         </div>
       </form>
