@@ -42,54 +42,22 @@ class DonationController extends Controller
             'prenom'=>'required',
             'email'=>'required',
             'cause'=>'required',
-            'montant'=>'required'
+            'montant'=>'required',],
+            ['required'=>'veuillez remplir votre :attribute !!! '
         ]);
-        donation::create($request->all()); 
-        return redirect()->route('products.index') -> with('success','Product created successfully.');
+        $donate = new donation();
+        $donate->nom = $request->nom;
+        $donate->prenom = $request->prenom;
+        $donate->email = $request->email;
+        $donate->cause = $request->cause;
+        $donate->montant = $request->montant;
+        $rs = $donate->save(); 
+        if ($rs == true) {
+            return redirect()->back()->with('success','we are so glade for your support .');
+        }else {
+            return redirect()->back()->with('failed','form not created .');
+        }
+        
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }
