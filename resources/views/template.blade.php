@@ -20,10 +20,16 @@
 </head>
 
 <body>
+    <div class="top-header py-2">
+        <div class="container text-center">
+            <h1><strong >Association</strong></h1>
+        </div>
+    </div>
     <!-- barre de navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top bg-gradient">
+    
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{route('acceuil.index')}}">Association</a>
+            <a class="navbar-brand" href="#">Association</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,8 +56,7 @@
 <!-- hna n ajoutiw chi footer generale  -->
 <!-- FOOTER -->
 
-<footer class="footer" id="footer">
-            <div class="container">
+<footer class="footer footer-expand-lg p-3 border border-light rounded-2" id="footer">
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
                         <div class="footer-charity-text">
@@ -70,10 +75,10 @@
                             <div class="col-md-4 col-sm-3">
                                 <div class="footer-text two">
                                     <h3>LIENS RAPIDES</h3>
-                                    <ul>
-                                        <li><a href="http://lravel-project.test/acceuil">Accueil</a></li>
-                                        <li><a href="http://lravel-project.test/acceuil#causes">Causes</a></li>
-                                        <li><a href="{{route('acceuil.create')}}">Donate</a></li>
+                                    <ul class="list-group">
+                                        <li><a class="href_link " href="{{route('acceuil.index')}}">Accueil</a></li>
+                                        <li><a class="href_link" href="{{route('acceuil.index')}}">Causes</a></li>
+                                        <li><a class="href_link" href="{{route('acceuil.store')}}">Donate</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -90,9 +95,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </footer>
-        <div class="footer_bottom">
+        <div class="footer_bottom border-light rounded-2">
                 <p>Copyright @ 2022 | Touts droits résérvés </p>
          </div>
     </div>

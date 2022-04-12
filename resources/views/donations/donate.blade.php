@@ -23,8 +23,8 @@
 </div>
 @endif
 
-<div class="container col-md-10 bg-light mt-3 ">
-  <form action="{{route('acceuil.store')}}" method="POST" class="form p-2 mb-3">
+<div class="container col-md-10 bg-light mt-3 mb-5 border border-success rounded ">
+  <form action="{{route('acceuil.store')}}" method="POST" class="form p-3 mb-3">
     @csrf
     <div class="form-group form-group-lg ">
       <label class="form-label" for="nom">Nom</label>
@@ -71,6 +71,6 @@
 </div>
 
 
-<div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci asperiores eum quo et placeat? Delectus porro, similique aperiam dicta rem atque nemo doloribus recusandae non modi necessitatibus dolores temporibus pariatur? Quibusdam doloribus aliquid, eum consequuntur consectetur porro! Minus repellat blanditiis esse porro unde soluta! Eius cupiditate culpa ipsam nulla fugiat! Iusto dicta sed voluptatibus ipsam expedita recusandae nemo blanditiis earum, placeat obcaecati possimus a? Corporis provident aperiam in similique perferendis sequi, recusandae sed doloribus ex voluptatem officiis eligendi facere nulla molestiae eius blanditiis magnam quae. Maxime, consequuntur ea eos numquam quidem quod provident quia minima libero qui. Eveniet, repudiandae eaque!</div>
+<div class="m-5"></div>
 
 @endsection

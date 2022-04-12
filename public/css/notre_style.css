@@ -14,12 +14,12 @@
 }
 
 
-
 .footer{
     background: #232323;
     color: #cacaca;
-    margin: 70px 0 0;
-    padding: 50px;
+    /* margin: 70px 0 0;
+    padding: 50px; */
+    margin: 0%;
 }
 
 .footer_bottom{
@@ -52,4 +52,8 @@
 
 .liens-rapides a:hover{
     color : #f8b808;
+}
+.href_link {
+    color: white;
+    text-decoration: none;
 }
