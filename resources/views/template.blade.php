@@ -11,6 +11,7 @@
     <!-- Scripts -->
     <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="https://kit.fontawesome.com/92265a4cc3.js" crossorigin="anonymous"></script>
     <!-- Styles -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
@@ -22,7 +23,7 @@
 <body>
     <div class="top-header py-2">
         <div class="container text-center">
-            <h1><strong>Association</strong></h1>
+            <h1><i class="fa fa-duotone fa-seedling"></i></i><strong>Association</strong></h1>
         </div>
     </div>
     <!-- barre de navigation -->
@@ -60,16 +61,16 @@
         <div class="container p-4">
             <div class="row">
                 <div class="col-md-4">
-                    <h2 class="text-uppercase mb-3">Association</h2>
+                    <h2 class="text-uppercase mb-3"><i class="fa fa-duotone fa-seedling"></i>Association</h2>
                     <p>
                         Notre association fait beaucoup d'efforts pour aider les familles et les enfants réfugiés du
                         monde entier à traverser leurs difficultés, nous sommes bien connus et fiables, basés sur kénitra maroc,<br>
                         Avec votre hospitalité nous restons.
                     </p>
-                    <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></p>
+
                 </div>
                 <div class="col-md-4">
-                    <h3 class="text-uppercase mb-3">LIENS RAPIDES</h3>
+                    <h3 class="text-uppercase mb-3"><i class="fa fa-regular fa-link"></i>  LIENS RAPIDES</h3>
                     <ul class="list-unstyled mb-0">
                         <li><a class="text-reset" href="{{route('acceuil.index')}}">Accueil</a></li>
                         <li><a class="text-reset" href="{{route('acceuil.index')}}">Causes</a></li>
@@ -77,7 +78,7 @@
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h3 class="text-uppercase mb-3">CONTACTEZ NOUS</h3>
+                    <h3 class="text-uppercase mb-3"><i class="fa fa-light fa-at"></i>  CONTACTEZ NOUS</h3>
                     <ul class="list-unstyled mb-0">
                         <li><i class="material-icons">Kénitra</i> Maamora rue 12 résidence Asmaa</li>
                         <li><i class="material-icons">email :</i> contact@lravel-project.test</li>
