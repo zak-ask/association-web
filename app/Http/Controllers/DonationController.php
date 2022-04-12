@@ -37,6 +37,12 @@ class DonationController extends Controller
      */
     public function store(Request $request)
     {
+        $donate = new donation();
+        $donate->nom = $request->nom;
+        $donate->prenom = $request->prenom;
+        $donate->email = $request->email;
+        $donate->cause = $request->cause;
+        $donate->montant = $request->montant;
         $request->validate([
             'nom'=>'required',
             'prenom'=>'required',
@@ -45,17 +51,17 @@ class DonationController extends Controller
             'montant'=>'required',],
             ['required'=>'veuillez remplir votre :attribute !!! '
         ]);
-        $donate = new donation();
-        $donate->nom = $request->nom;
-        $donate->prenom = $request->prenom;
-        $donate->email = $request->email;
-        $donate->cause = $request->cause;
-        $donate->montant = $request->montant;
+        // $donate = new donation();
+        // $donate->nom = $request->nom;
+        // $donate->prenom = $request->prenom;
+        // $donate->email = $request->email;
+        // $donate->cause = $request->cause;
+        // $donate->montant = $request->montant;
         $rs = $donate->save(); 
         if ($rs == true) {
             return redirect()->back()->with('success','Merci pour votre générosité! Vous aidez à rendre le monde meilleur');
         }else {
-            return redirect()->back()->with(' On a rencontré quelques problèmes, veuillez réessayer si il vous plait');
+            return redirect()->back()->with('donate',$donate);
         }
         
     }

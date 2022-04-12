@@ -22,13 +22,12 @@
   </ul>
 </div>
 @endif
-
 <div class="container col-md-10 bg-light mt-3 mb-5 border border-success rounded ">
   <form action="{{route('acceuil.store')}}" method="POST" class="form p-3 mb-3">
     @csrf
     <div class="form-group form-group-lg ">
       <label class="form-label" for="nom">Nom</label>
-      <input type="text" id="nom" name="nom" class="form-control" />
+      <input type="text" id="nom" name="nom" class="form-control" value="" />
     </div>
     <div class="form-group form-group-lg">
       <label class="form-label" for="prenom">Prénom</label>
@@ -41,6 +40,7 @@
     <div class="form-group form-group-lg">
       <label for="exampleFormControlSelect1" class="form-label">Selectionner votre cause</label>
       <select class="form-control" id="exampleFormControlSelect1" name="cause">
+        <option disabled selected>Selectionner un cause</option>
         <option>La guerre ukrainienne</option>
         <option>La faim au Yémen</option>
         <option>Catastrophes naturelles en asie</option>
@@ -62,7 +62,7 @@
       <input class="form-check-input" type="radio" name="montant" id="montant" value="10000" checked>
       <label class="form-check-label" for="montant">10,000 DH</label>
     </div>
-    <div class="form-group form-group-lg text-center " >
+    <div class="form-group form-group-lg text-center ">
       <input type="submit" class="btn btn-success col-md-6 " autocomplete="off" value="Donate">
       <!-- Button trigger modal -->
       <!-- <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal" value="Donate"> -->
@@ -71,6 +71,8 @@
 </div>
 
 
-<div class="m-5"></div>
+
+
+<!-- <div class="m-5"></div> -->
 
 @endsection

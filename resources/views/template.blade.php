@@ -10,24 +10,24 @@
 
     <!-- Scripts -->
     <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
-    <script src="{{ asset('js/bootstrap.min.js') }}" ></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <!-- Styles -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/notre_style.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('css/notre_style.css') }}" rel="stylesheet"> -->
 
 </head>
 
 <body>
     <div class="top-header py-2">
         <div class="container text-center">
-            <h1><strong >Association</strong></h1>
+            <h1><strong>Association</strong></h1>
         </div>
     </div>
     <!-- barre de navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top bg-gradient">
-    
+
         <div class="container-fluid">
             <a class="navbar-brand" href="{{route('acceuil.index')}}">Association</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,53 +53,44 @@
     </nav>
     @yield('content')
 
-<!-- hna n ajoutiw chi footer generale  -->
-<!-- FOOTER -->
+    <!-- hna n ajoutiw chi footer generale  -->
+    <!-- FOOTER -->
 
-<footer class="footer footer-expand-lg p-3 border border-light rounded-2" id="footer">
-                <div class="row">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="footer-charity-text">
-                            <h2>Association</h2>
-                            <p>
-                                Notre association fait beaucoup d'efforts pour aider les familles et les enfants réfugiés du 
-                                monde entier à traverser leurs difficultés, nous sommes bien connus et fiables, basés sur kénitra maroc,<br>
-                                Avec votre hospitalité nous restons.
-                            </p>
-                            <hr>
-                            <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-3">
-                                <div class="footer-text two">
-                                    <h3>LIENS RAPIDES</h3>
-                                    <ul class="list-group">
-                                        <li><a class="href_link " href="{{route('acceuil.index')}}">Accueil</a></li>
-                                        <li><a class="href_link" href="{{route('acceuil.index')}}">Causes</a></li>
-                                        <li><a class="href_link" href="{{route('acceuil.store')}}">Donate</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="footer-text one">
-                                    <h3>CONTACTEZ NOUS</h3>
-                                    <ul>
-                                        <li><i class="material-icons">Kénitra</i> Maamora rue 12 résidence Asmaa</li>
-                                        <li><i class="material-icons">email :</i> contact@lravel-project.test</li>
-                                        <li><i class="material-icons">téléphone :</i> +212999999999</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <footer class="footer bg-dark text-white text-center col-md-12" id="footer">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="text-uppercase mb-3">Association</h2>
+                    <p>
+                        Notre association fait beaucoup d'efforts pour aider les familles et les enfants réfugiés du
+                        monde entier à traverser leurs difficultés, nous sommes bien connus et fiables, basés sur kénitra maroc,<br>
+                        Avec votre hospitalité nous restons.
+                    </p>
+                    <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></p>
                 </div>
-        </footer>
-        <div class="footer_bottom border-light rounded-2">
+                <div class="col-md-4">
+                    <h3 class="text-uppercase mb-3">LIENS RAPIDES</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li><a class="text-reset" href="{{route('acceuil.index')}}">Accueil</a></li>
+                        <li><a class="text-reset" href="{{route('acceuil.index')}}">Causes</a></li>
+                        <li><a class="text-reset" href="{{route('acceuil.create')}}">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-uppercase mb-3">CONTACTEZ NOUS</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="material-icons">Kénitra</i> Maamora rue 12 résidence Asmaa</li>
+                        <li><i class="material-icons">email :</i> contact@lravel-project.test</li>
+                        <li><i class="material-icons">téléphone :</i> +212999999999</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
                 <p>Copyright @ 2022 | Touts droits résérvés </p>
-         </div>
-    </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
