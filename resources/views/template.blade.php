@@ -45,7 +45,7 @@
                         <a class="nav-link" href="{{route('acceuil.index')}}#causes">Causes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('acceuil.index')}}#footer">Contact us</a>
+                        <a class="nav-link" href="{{route('acceuil.index')}}#footer">Contactez nous</a>
                     </li>
                 </ul>
             </div>

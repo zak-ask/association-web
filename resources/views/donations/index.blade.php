@@ -67,15 +67,15 @@
       <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
       <img src="{{asset('img/zak.jpg')}}" class="rounded-circle" width="240" height="240" alt="">
       <h2>President</h2>
-      <p><strong class="italic"> Our mission is to help people all over the world, regardless of who they are, their colors or their religions,</strong></p>
-      <p><a class="btn btn-primary active" href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank">View details &raquo;</a></p>
+      <p><strong class="italic">il n'y a rien de plus joyeux et épanouissant que de voir le sourire sur les visages des personnes dans le besoin, je suis honoré de participer à cette mission et d'être président de cette organisation</strong></p>
+      <p><a class="btn btn-primary active" href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank">Profile &raquo;</a></p>
     </div><!-- /.col-lg-4 -->
     <div class="col-lg-4 offset-lg-1 text-center">
       <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-      <img src="{{asset('img/elon-musk.jpg')}}" class="rounded-circle" width="240" height="240" alt="">
-      <h2>President</h2>
-      <p><strong class="italic"> Our mission is to help people all over the world, regardless of who they are, their colors or their religions,</strong></p>
-      <p><a class="btn btn-primary active" href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank">View details &raquo;</a></p>
+      <img src="{{asset('img/younes.jpg')}}" class="rounded-circle" width="240" height="240" alt="">
+      <h2>Fondateur</h2>
+      <p><strong class="italic">Nous avons créé cette organisation avec une seule mission, qui est d'aider les personnes dans le besoin à travers le monde, en consacrant notre temps, nos efforts et nos ressources à ce noble objectif</strong></p>
+      <p><a class="btn btn-primary active" href="https://www.linkedin.com/in/younes-khoubaz-24bb97209/" target="_blank">Profile &raquo;</a></p>
     </div><!-- /.col-lg-4 -->
 
 
