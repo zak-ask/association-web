@@ -41,3 +41,15 @@
 .row{
     justify-content: center;
 }
+
+.liens-rapides a:link{
+    text-decoration: none;
+}
+
+.liens-rapides a{
+    color: #cacaca ;
+}
+
+.liens-rapides a:hover{
+    color : #f8b808;
+}
