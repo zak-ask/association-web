@@ -20,6 +20,7 @@ class CreateDonationsTable extends Migration
             $table->string('email');
             $table->string('cause');
             $table->double('montant');
+            $table->timestamps();
         });
     }
 

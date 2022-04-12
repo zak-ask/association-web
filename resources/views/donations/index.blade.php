@@ -17,7 +17,7 @@
           <div class="carousel-caption text-start">
             <h1>La vraie charité, celle qui vient du coeur, ne se demande jamais dans quelles mains va tomber son aumône.</h1>
             <p></p>
-            <p><a class="btn btn-lg btn-primary" href="{{route('acceuil.create')}}">Donate now</a></p>
+            <p><a class="btn btn-lg btn-primary" href="{{route('acceuil.create')}}">Donate</a></p>
           </div>
         </div>
       </div>
