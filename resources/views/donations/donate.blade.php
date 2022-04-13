@@ -21,6 +21,7 @@
     @endforeach
   </ul>
 </div>
+
 @endif
 <div class="container col-md-10 bg-light mt-3 mb-5 border border-success rounded ">
   <form action="{{route('acceuil.store')}}" method="POST" class="form p-3 mb-3">
