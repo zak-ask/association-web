@@ -20,10 +20,10 @@ Route::get('/', function () {
 });
 
 Route::resource('acceuil',DonationController::class);
+
+
+
 // for testing 
-Route::get('/test', function () {
-    return view('test');
-});
 
 // Route::get('/donate', function () {
 //     return view('donations.donate');

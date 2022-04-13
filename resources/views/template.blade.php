@@ -37,13 +37,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{{route('acceuil.index')}}">Home</a>
+                        <a class="nav-link" aria-current="page" href="{{route('acceuil.index')}}">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('acceuil.create')}}">Donate</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('acceuil.index')}}#causes">Causes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('acceuil.index')}}#membres">Membres</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('acceuil.index')}}#footer">Contactez nous</a>
@@ -73,7 +76,8 @@
                     <h3 class="text-uppercase mb-3"><i class="fa fa-regular fa-link"></i>  LIENS RAPIDES</h3>
                     <ul class="list-unstyled mb-0">
                         <li><a class="text-reset" href="{{route('acceuil.index')}}">Accueil</a></li>
-                        <li><a class="text-reset" href="{{route('acceuil.index')}}">Causes</a></li>
+                        <li><a class="text-reset" href="{{route('acceuil.index')}}#causes">Causes</a></li>
+                        <li><a class="text-reset" href="{{route('acceuil.index')}}#membres">Membres</a></li>
                         <li><a class="text-reset" href="{{route('acceuil.create')}}">Donate</a></li>
                     </ul>
                 </div>
