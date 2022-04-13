@@ -9,7 +9,7 @@
     <link href="{{ asset('css/carousel.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
-    <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="https://kit.fontawesome.com/92265a4cc3.js" crossorigin="anonymous"></script>
     <!-- Styles -->
@@ -46,7 +46,7 @@
                         <a class="nav-link" href="{{route('acceuil.index')}}#causes">Causes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('acceuil.index')}}#footer">Contactez nous</a>
+                        <a class="nav-link" href="#footer">Contactez nous</a>
                     </li>
                 </ul>
             </div>
