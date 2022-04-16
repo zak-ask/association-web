@@ -1,0 +1,59 @@
+#formulaire-container{
+    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+
+#bouton-envoyer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer{
+    background: #232323;
+    color: #cacaca;
+    /* margin: 70px 0 0;
+    padding: 50px; */
+    margin: 0%;
+}
+
+.footer_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+.panel-heading{
+    text-align: center;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.row{
+    justify-content: center;
+}
+
+.liens-rapides a:link{
+    text-decoration: none;
+}
+
+.liens-rapides a{
+    color: #cacaca ;
+}
+
+.liens-rapides a:hover{
+    color : #f8b808;
+}
+.href_link {
+    color: white;
+    text-decoration: none;
+}
