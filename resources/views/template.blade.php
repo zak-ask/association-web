@@ -57,7 +57,7 @@
     </nav>
     @yield('content')
 
-    <!-- hna n ajoutiw chi footer generale  -->
+
     <!-- FOOTER -->
 
     <footer class="footer bg-dark text-white text-center col-md-12" id="footer">
